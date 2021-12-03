@@ -1,0 +1,33 @@
+input {
+    /* width: 100%; */
+
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.container {
+    min-width: 80vw;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    /* border-radius: 5px; */
+    padding: 1vh 1vw;
+    /* min-height: 10vh; */
+}
+
+.images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0 10px;
+    grid-auto-rows: 10px;
+    
+}
+
+.images img {
+    width: 250px;
+    grid-row-end: span 2;
+}

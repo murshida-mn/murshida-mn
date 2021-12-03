@@ -1,0 +1,40 @@
+/* div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+input {
+    width: 100%;
+}
+
+label {
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+button {
+    margin-top: 1rem;
+    min-width: 12rem;
+}
+
+.dropdown-list {
+    display: none;
+    min-width: 12rem;
+    height: auto;
+
+    /* padding: 0 1rem; */
+    border:  1px solid black;
+    border-radius: 5px;
+}
+
+.list-item {
+    min-width: 12rem;
+}
+.list-item:hover  {
+    background-color: blue;
+}
+
+.is-active {
+    display: inline;
+}

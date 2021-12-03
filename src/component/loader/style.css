@@ -1,0 +1,38 @@
+.loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+}
+
+.loader {
+    width: 5vw;
+    height: 5vw;
+    /* background-color: skyblue; */
+    border: 5px solid rgb(19, 18, 18);
+    border-left: 5px solid white;
+    border-radius: 100%;
+    animation: loading 0.5s ease infinite forwards;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

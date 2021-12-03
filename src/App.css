@@ -1,0 +1,16 @@
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.comment-block {
+  margin: 0;
+  background: aliceblue;
+  padding: 10px;
+  text-shadow: -5px 5px 10px #000;
+}
+
+.App {
+  width: 100%;
+  border: 1px solid red;
+}
