@@ -1,28 +1,39 @@
 import './App.css';
-import Counter from './component/tutorial/Counter';
-import Form from './pages/form';
-import React from 'react';
-import Network from './component/tutorial/Network';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Post from './component/tutorial/Post';
-import Transalator from './component/translator';
-import GeoLocation from './component/geolocation';
-import Pics from './component/pics';
+// import Form from './pages/form';
+import React, {useState} from 'react';
+// import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+// import { pathList } from './component/navigation/pathList';
+// import { Header } from './component/navigation/header';
+import Streams from './component/stream/client/Index';
+
+var userDetailContext = React.createContext(null);
 
 function App() {
-  const [state, setstate] = React.useState({mounted:true, ignoreProps:false, seed:40})
+  const [state] = React.useState({ mounted: true, ignoreProps: false, seed: 40 })
   
-  const mount = () => {
-    setstate({mounted:true})
-  }
+  var [userDetails, setuserDetails] = useState({
+    name: "Mayank",
+    age: 30
+  });
+      
+  // const mount = () => {
+  //   setstate({mounted:true})
+  // }
 
-  const unmount = () => {
-    setstate({mounted:false})
-  }
+  // const unmount = () => {
+  //   setstate({mounted:false})
+  // }
 
-  const generateSeed = () => {
-    setstate({...state, seed: parseInt(Math.random()*100)})
-  }
+  // const generateSeed = () => {
+  //   setstate({...state, seed: parseInt(Math.random()*100)})
+  // }
+
+  console.log('parent comp');
+
+  // React.useEffect(() => {
+  //   const timer = setTimeout(()=> setuserDetails({name:'Murshida', age:21}), 1000);
+  //   return () => {clearTimeout(timer)}
+  // })
 
   return (
     <div className="App">
@@ -36,18 +47,20 @@ function App() {
             null
       } */}
 
-      <BrowserRouter>
+
+      {/* <BrowserRouter>
+        <Header />
+        <div className='main-content'>
         <Routes>
-          <Route  exact path="comments" element={<Network />} />
-          <Route  exact path="counter" element={<Counter seed={state.seed} />} />
-          <Route  exact path="post" element={<Post  />} />
-          <Route  exact path="/translator" element={<Transalator  />} />
-          <Route  exact path="/geolocation" element={<GeoLocation  />} />
-          <Route  exact path="/" element={<Pics  />} />
-
-
+          {pathList.map(({ to, path, Component }) => (
+            <Route exact path={path} element={<Component />} />
+          ))}
         </Routes>
-      </BrowserRouter>
+        </div>
+         </BrowserRouter> */}
+
+         <Streams />
+     
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { Component, createRef, RefObject } from 'react'
+import  { Component, createRef, RefObject } from 'react'
 
 type Iprops = {
     url: any
@@ -39,7 +39,7 @@ export class ImageCard extends Component<Iprops, Istate> {
 
         return (
             <div  style={{gridRowEnd:`span ${this.state.spans}`}}>
-                <img  ref={this.imageRef} src={url.thumb} />
+                <img  alt="" ref={this.imageRef} src={url.thumb} />
 
             </div>
         )

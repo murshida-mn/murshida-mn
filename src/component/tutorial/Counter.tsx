@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 type Iprops = {
     seed:number
@@ -12,7 +12,7 @@ type Istate = {
     ThrownError?:boolean
 }
 
-const ErrorComponent = (props:any) => <div>{props.ignore}</div>;
+// const ErrorComponent = (props:any) => <div>{props.ignore}</div>;
 
 export class Counter extends Component<Iprops, Istate> {
     constructor(props:Iprops) {

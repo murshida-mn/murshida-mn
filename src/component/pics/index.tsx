@@ -1,8 +1,7 @@
 import React from 'react'
-import axios from 'axios'
 import './style.css'
 import SearchBar from './SearchBar'
-import Axios from '../../helper/Axios'
+import { unspalshAPi } from '../../helper/Axios'
 import ImageList from './ImageList'
 
 type Iprops = {
@@ -29,7 +28,7 @@ class index extends React.Component<Iprops, Istate> {
 
     onFormSubmit = async (term:string) => {
         this.setState({term:term})
-        const response = await Axios.get(`/search/photos`, { params:{ query:term }});
+        const response = await unspalshAPi.get(`/search/photos`, { params:{ query:term }});
 
         this.setState({images: response.data.results})
         console.log(response);
@@ -38,7 +37,7 @@ class index extends React.Component<Iprops, Istate> {
 
     render() {
 
-        const { term ,images} = this.state;
+        const { images} = this.state;
 
         return (
             <div className="container">

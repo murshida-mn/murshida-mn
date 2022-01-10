@@ -1,0 +1,61 @@
+
+.btn {
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #f00;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: #00f;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.field {
+    display: flex;
+    margin: 10px 0;
+}
+
+label {
+    width: 10%;
+}
+
+.field input {
+    width: 50%;
+}
+
+.text-danger {
+    color: red;
+    font-weight: bold;
+}
+
+.stream {
+    display: flex;
+    padding: 25px;
+    border: 1px solid black;
+    margin: 25px;
+    justify-content: space-around;
+}
+
+.content {
+   flex: 1;
+}
+
+svg {
+    width: 10%;
+    font-size: 50px;
+}
+
+.right-align {
+    text-align: right;
+}

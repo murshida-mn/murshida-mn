@@ -1,4 +1,4 @@
-import React, { Component, FormEventHandler } from 'react'
+import  { Component } from 'react'
 
 export class Post extends Component {
 

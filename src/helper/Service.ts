@@ -1,7 +1,4 @@
 class ApiService {
-
-    constructor() {}
-
     public static instance:ApiService;
 
     public static getApiServiceInstance(): ApiService {

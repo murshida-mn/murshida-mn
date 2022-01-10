@@ -1,0 +1,22 @@
+.item {
+    display: flex; 
+    align-items: center;
+}
+
+.floated-right {
+    margin-left: 3rem;
+}
+
+.content {
+    margin-left: 3rem;
+}
+
+.item div {
+    width: 100%;
+}
+.primary-button {
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}

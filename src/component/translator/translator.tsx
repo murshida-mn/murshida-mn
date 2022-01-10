@@ -6,18 +6,18 @@ interface Iprops {
 }
 
 const Translator = ({text, language} : Iprops) => {
-    const [translated, setTranslated] = React.useState("")
+    const [translated] = React.useState("")
 
     const doTranslation = async (signal:any) => {
         try {
-            let options =  {
-                method:"post",
-                body: JSON.stringify({q:text, target:language}),
-                signal:signal
-            }
+            // let options =  {
+            //     method:"post",
+            //     body: JSON.stringify({q:text, target:language}),
+            //     signal:signal
+            // }
 
-            let res = await fetch("https://translation.googleapis.com/language/translate/v2?key=AIzaSyCf0Xy0OnhxlduyEt3K8zP-sOuu-l_u6uA", options)
-            res = await res.json();
+            // let res = await fetch("https://translation.googleapis.com/language/translate/v2?key=AIzaSyCf0Xy0OnhxlduyEt3K8zP-sOuu-l_u6uA", options)
+            // res = await res.json();
             // setTranslated(res.data.translations[0].translatedText)
         } catch(error) {
             // throw new Error(error)

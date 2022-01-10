@@ -14,7 +14,7 @@ interface Iprops {
 const Language = ({language, onLanguageChange} : Iprops) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
-    const onSelect = (languege:string) => {
+    const onSelect = (language:string) => {
         setIsOpen(false);
         onLanguageChange(language)
     }

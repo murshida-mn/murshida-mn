@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Field from './field';
 import Language from './language';
 import './style.css';

@@ -1,7 +1,7 @@
 import React from 'react'
-import { BsFillSunFill, BsFillCloudFog2Fill }  from 'react-icons/bs'
+import { BsFillSunFill }  from 'react-icons/bs'
 import { FaRegSnowflake }  from 'react-icons/fa'
-import Loader from '../loader/Loader'
+// import Loader from '../loader/Loader'
 
 
 type Iprops = {

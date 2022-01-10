@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import ApiService, { fetchWIthTimeout, makeGetRequest } from '../../helper/Service';
 import Comments from './Comments';
 
@@ -67,7 +67,7 @@ export class Network extends Component<Iprops, Istate> {
 
     render() {
 
-        const { error, loading, data } = this.state;
+        const { error, loading } = this.state;
 
         let controller: any = null;
 
@@ -133,7 +133,7 @@ export class Network extends Component<Iprops, Istate> {
                         )) }
 
                         {this.state.data.length > 0 && this.state.data.map((item: any) => (
-                            <img key={item.id} src={item.url} width="100" height="100" />
+                            <img  alt="" key={item.id} src={item.url} width="100" height="100" />
                         ))}
 
                     </div>
